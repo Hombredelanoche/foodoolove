@@ -8,10 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
+      colors: {
+        primary: "#079992",
+        primaryLight: "#38ada9",
+        secondary: "#78e08f",
+        secondaryLight: "#b8e994",
+        contrast: "#0a3d62",
+        error: "#b71540",
+      },
+      fontFamily: {
+        playwritePr: ['"Playwrite PE"', "cursive"],
+        roboto: ["Roboto", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
+        lora: ["Lora", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
