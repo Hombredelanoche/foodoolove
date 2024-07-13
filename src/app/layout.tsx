@@ -18,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mx-auto w-full min-h-screen">
+      <head>
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+      </head>
+      <body className="mx-auto w-full min-h-screen bg-yellow-50">
         <Header />
         <section className="md:max-w-3xl p-4 mx-auto">{children}</section>
         <Footer />

@@ -7,6 +7,10 @@ type Props = {
   };
 };
 
+function getRandomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
+
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
@@ -21,6 +25,11 @@ export const generateMetadata = async ({
 };
 
 const RecetteId = ({ params }: Props) => {
+  const random = getRandomInt(2);
+
+  if (random != 2) {
+    throw new Error("Error loading recette");
+  }
   return <div>Detail de la recette {params.productId} </div>;
 };
 
