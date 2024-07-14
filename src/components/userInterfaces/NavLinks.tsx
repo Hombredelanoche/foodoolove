@@ -22,11 +22,12 @@ const NavLinks: React.FC<NavLinksProps> = ({ className }) => {
               href={item.href}
               title={item.name}
               className={clsx(
-                `text-lg font-playwritePr text-white font-semibold hover:text-primaryLight transition `,
-                {
-                  "active:text-primaryLight font-bold underline":
-                    activeName === item.name,
-                },
+                `text-lg font-playwritePr text-white font-semibold hover:text-primaryLight transition ${
+                  activeName === item.name
+                    ? "active:text-primaryLight font-bold underline"
+                    : ""
+                }`,
+
                 className
               )}
               onClick={() => handleClick(item.name)}
