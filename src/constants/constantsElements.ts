@@ -1,7 +1,7 @@
-import { NavLink, RecetteProps } from "@/interfaces/type";
+import { NavLinkProps, RecetteProps } from "@/interfaces/type";
 export { navLinksElements, recetteElements };
 
-const navLinksElements: NavLink[] = [
+const navLinksElements: NavLinkProps[] = [
   { name: "Accueil", href: "/" },
   { name: "Nos recettes", href: "/recettes" },
   { name: "En savoir plus", href: "/" },
@@ -12,7 +12,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 1,
     name: "Biryani agneaux",
-    src: "@@/public/photoRecettes/biryani-agneau.jpg",
+    src: "/photoRecettes/biryani-agneau.jpg",
     cookingTime: 160,
     persons: 4,
     chef: "Lasurprise",
@@ -20,7 +20,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 2,
     name: "Dhal",
-    src: "@@/public/photoRecettes/dhal.jpg",
+    src: "/photoRecettes/dhal.jpg",
     cookingTime: 40,
     persons: 4,
     chef: "Lasurprise",
@@ -28,7 +28,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 3,
     name: "Chana Masala",
-    src: "@@/public/photoRecettes/chana-masala.jpg",
+    src: "/photoRecettes/chana-masala.jpg",
     cookingTime: 90,
     persons: 4,
     chef: "Lasurprise",
@@ -36,7 +36,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 4,
     name: "Raïta",
-    src: "@@/public/photoRecettes/raita.jpg",
+    src: "/photoRecettes/raita.jpg",
     cookingTime: 15,
     persons: 4,
     chef: "MCB",
@@ -44,7 +44,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 5,
     name: "Lassi à la mangue",
-    src: "@@/public/photoRecettes/lassi-mangue.jpg",
+    src: "/photoRecettes/lassi-mangue.jpg",
     cookingTime: 10,
     persons: 4,
     chef: "MCB",
@@ -52,7 +52,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 6,
     name: "Chicken Korma",
-    src: "@@/public/photoRecettes/chicken-korma.jpg",
+    src: "/photoRecettes/chicken-korma.jpg",
     cookingTime: 60,
     persons: 4,
     chef: "Lasurprise",
@@ -60,7 +60,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 7,
     name: "Chicken Tandoori",
-    src: "@@/public/photoRecettes/tandoori.jpg",
+    src: "/photoRecettes/tandoori.jpg",
     cookingTime: 150,
     persons: 4,
     chef: "Lasurprise",
@@ -68,7 +68,7 @@ const recetteElements: RecetteProps[] = [
   {
     id: 8,
     name: "Chicken 65",
-    src: "@@/public/photoRecettes/chicken65.jpg",
+    src: "/photoRecettes/chicken65.jpg",
     cookingTime: 45,
     persons: 4,
     chef: "Lasurprise",

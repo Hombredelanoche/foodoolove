@@ -1,4 +1,4 @@
-export interface NavLink {
+export interface NavLinkProps {
   name: string;
   href: string;
 }
@@ -11,3 +11,5 @@ export interface RecetteProps {
   persons: number;
   chef: string;
 }
+
+export interface IngrediantsProps {}
